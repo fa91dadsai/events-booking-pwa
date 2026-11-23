@@ -1,7 +1,7 @@
 // Cache policy for sw.js, kept free of service-worker globals so tests can load it.
 // It is a classic script (not an ES module) because importScripts() cannot load modules in every browser.
 (function register(root) {
-  const SHELL_FILES = ['manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png'];
+  const SHELL_FILES = ['manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'maskable-512.png', 'apple-touch-icon.png', 'theme-init.js'];
   // Server calls must always reach the network: cached booking or payment data would be stale and unsafe.
   const NEVER_CACHED_PATHS = ['/v1/', '/functions/'];
 

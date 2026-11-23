@@ -3,10 +3,10 @@
 importScripts('./sw-policy.js');
 const { SHELL_FILES, cacheStrategy, isStorable } = self.EB_SW_POLICY;
 // The build replaces the placeholders: a hash of every built file, and the list of built /assets/ files.
-const BUILD_ID = '1bb802ad4b41';
+const BUILD_ID = '3baf4cbe31ee';
 const CACHE_PREFIX = 'events-booking-shell-';
 const CACHE = `${CACHE_PREFIX}${BUILD_ID}`;
-const BUILT_ASSETS = ["./assets/PlatformRoot-CR0MbYpr.js", "./assets/config-CNy9lUXc.js", "./assets/index-BM_RLr_q.css", "./assets/index-BStDjwT8.js", "./assets/vendor-dexie-aT6q9TpP.js", "./assets/vendor-supabase-B9nbruCH.js"];
+const BUILT_ASSETS = ["./assets/PlatformRoot-Bi5qBuZU.js", "./assets/config-CNy9lUXc.js", "./assets/index-CJsnSynq.css", "./assets/index-DrY9kvDZ.js", "./assets/rolldown-runtime-BHe-jwch.js", "./assets/vendor-dexie-De9I2VwK.js", "./assets/vendor-supabase-B9nbruCH.js", "./assets/xlsx-DcBIXJCr.js"];
 // Without every one of these the app cannot start offline, so a failed fetch fails the install.
 const REQUIRED = ['./', './index.html', './sw-policy.js', ...BUILT_ASSETS];
 const OPTIONAL = SHELL_FILES.map((file) => `./${file}`);
