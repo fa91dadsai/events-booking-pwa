@@ -3,10 +3,10 @@
 importScripts('./sw-policy.js');
 const { SHELL_FILES, cacheStrategy, isStorable } = self.EB_SW_POLICY;
 // The build replaces the placeholders: a hash of every built file, and the list of built /assets/ files.
-const BUILD_ID = 'b08789ad84e6';
+const BUILD_ID = 'f28b4514c792';
 const CACHE_PREFIX = 'events-booking-shell-';
 const CACHE = `${CACHE_PREFIX}${BUILD_ID}`;
-const BUILT_ASSETS = ["./assets/App-D3zXxcjD.js", "./assets/PlatformRoot-OYRgy9yI.js", "./assets/config-CO0RXu4Z.js", "./assets/contact-55FVMbcx.js", "./assets/index-CYpmAGUh.css", "./assets/index-CgDM4R7j.js", "./assets/inviteFlow-Iex7k5Qp.js", "./assets/logo-BKppUQ1S.js", "./assets/rolldown-runtime-aKtaBQYM.js", "./assets/units-C6MCwGTm.js", "./assets/vendor-dexie-CaEXagPP.js", "./assets/vendor-supabase-B9nbruCH.js", "./assets/xlsx-BAec69Vn.js"];
+const BUILT_ASSETS = ["./assets/App-D3zXxcjD.js", "./assets/PlatformRoot-OYRgy9yI.js", "./assets/config-CNy9lUXc.js", "./assets/contact-55FVMbcx.js", "./assets/index-CYpmAGUh.css", "./assets/index-DJMn4Ywg.js", "./assets/inviteFlow-Iex7k5Qp.js", "./assets/logo-BKppUQ1S.js", "./assets/rolldown-runtime-aKtaBQYM.js", "./assets/units-C6MCwGTm.js", "./assets/vendor-dexie-CaEXagPP.js", "./assets/vendor-supabase-B9nbruCH.js", "./assets/xlsx-BAec69Vn.js"];
 // Without every one of these the app cannot start offline, so a failed fetch fails the install.
 const REQUIRED = ['./', './index.html', './sw-policy.js', ...BUILT_ASSETS];
 const OPTIONAL = SHELL_FILES.map((file) => `./${file}`);
